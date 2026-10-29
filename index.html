@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royaume de la Mariée | فساتين الأعراس: كراء وبيع</title>
+<meta name="description" content="فساتين أعراس للكراء والبيع. اختاري فستانك واطلبيه مباشرة عبر واتساب.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Royaume de la Mariée | فساتين الأعراس: كراء وبيع">
+<meta property="og:description" content="اختاري فستانك واطلبيه مباشرة عبر واتساب.">
+<meta property="og:image" content="https://mohammedberrou10-create.github.io/littlelink_new/images/IMG_1274.jpeg">
+<meta property="og:locale" content="ar_DZ">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF8F3; --surface:#FFFFFF; --ink:#2B2420; --muted:#6F645A;
+  --gold:#A7832F; --glow:#F1E6CB; --line:#E6D9BF;
+  --cta-bg:#2B2420; --cta-ink:#F6EBCB; --err:#B3261E;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#16120E; --surface:#1F1A15; --ink:#F2EBDD; --muted:#B3A793;
+    --gold:#D6B461; --glow:#3A2F1B; --line:#3A3022;
+    --cta-bg:#D6B461; --cta-ink:#1A140B; --err:#FF8A80;
+  }
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Tajawal",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px}
+h1,h2,h3{font-family:"Amiri","Times New Roman",serif;font-weight:700;line-height:1.3}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.btn{font:inherit;font-weight:700;border-radius:999px;padding:12px 22px;border:1px solid var(--gold);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:46px;color:var(--ink);background:transparent}
+.btn-primary{background:var(--cta-bg);color:var(--cta-ink);border-color:var(--cta-bg)}
+
+/* Hero */
+.hero{padding:40px 0 34px;text-align:center;background:radial-gradient(120% 75% at 50% 0%,var(--glow),transparent 72%)}
+.hero .arch{width:min(60vw,240px);margin:0 auto 26px;aspect-ratio:4/5;border-radius:999px 999px 18px 18px;overflow:hidden;box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--gold);background:#fff}
+.hero .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 38%;display:block}
+.hero h1{font-size:clamp(32px,9vw,46px)}
+.hero p{color:var(--muted);max-width:28ch;margin:8px auto 24px}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+/* Catalog */
+.catalog{padding:30px 0 10px}
+.catalog h2{font-size:30px;text-align:center}
+.filters{display:flex;gap:8px;justify-content:center;margin:16px 0 26px}
+.chip{font:inherit;cursor:pointer;border-radius:999px;padding:8px 20px;min-height:42px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--cta-bg);color:var(--cta-ink);border-color:var(--cta-bg);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 14px}
+@media (min-width:560px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{display:flex;flex-direction:column;text-align:center}
+.card .arch{aspect-ratio:3/4;border-radius:999px 999px 12px 12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{height:100%;display:grid;place-items:center;padding:10px;color:var(--muted);font-size:14px;background:linear-gradient(var(--surface),var(--glow))}
+.card h3{font-size:20px;margin-top:12px}
+.prices{color:var(--muted);font-size:14px;margin:2px 0 12px;line-height:1.7}
+.prices b{color:var(--ink)}
+.card .btn{margin-top:auto;padding:9px 12px;font-size:15px;min-height:44px}
+.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:20px 0}
+
+/* Steps */
+.steps{padding:36px 0 10px}
+.steps h2{font-size:26px;text-align:center;margin-bottom:14px}
+.steps ol{list-style:none;padding:0;display:grid;gap:10px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.steps li::before{content:counter(s);flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-weight:700}
+.faq{padding:30px 0 0}
+.faq h2{font-size:26px;text-align:center;margin-bottom:14px}
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:0 14px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:10px;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--muted);padding:0 0 14px}
+
+/* Footer */
+footer{margin-top:40px;padding:28px 0 36px;text-align:center;border-top:1px solid var(--line)}
+footer h2{font-size:22px}
+footer .links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+footer .addr{color:var(--muted);margin-top:12px}
+
+/* Order dialog */
+dialog{border:none;border-radius:22px 22px 0 0;padding:0;width:min(560px,100%);max-width:100%;max-height:92vh;margin:auto auto 0;background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(20,14,8,.55)}
+form{padding:22px 20px 24px}
+form h2{font-size:24px}
+.picked{color:var(--muted);margin-bottom:6px}
+label{display:block;font-weight:500;margin:14px 0 4px;font-size:15px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+textarea{min-height:76px;resize:vertical}
+.err{color:var(--err);min-height:1.4em;margin-top:10px;font-size:15px}
+.row{display:flex;gap:10px;margin-top:8px}
+.row .btn{flex:1}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="arch"><img src="images/IMG_1274.jpeg" alt="شعار Royaume de la Mariée"></div>
+    <h1>Royaume de la Mariée</h1>
+    <p>فساتين أعراس للكراء والبيع. اختاري فستانك واطلبيه من هاتفك.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#catalog">شاهدي الفساتين</a>
+      <a class="btn" id="heroWa" href="#" target="_blank" rel="noopener">راسلينا على واتساب</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="catalog" id="catalog">
+    <h2>فساتيننا</h2>
+    <div class="filters" role="group" aria-label="تصفية الفساتين">
+      <button class="chip" data-f="all" aria-pressed="true">الكل</button>
+      <button class="chip" data-f="rent" aria-pressed="false">للكراء</button>
+      <button class="chip" data-f="sale" aria-pressed="false">للبيع</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="steps">
+    <h2>كيف تطلبين؟</h2>
+    <ol>
+      <li>اختاري الفستان الذي أعجبك واضغطي «اطلبي هذا الفستان».</li>
+      <li>املئي بياناتك وتاريخ مناسبتك.</li>
+      <li>يصلنا طلبك على واتساب ونؤكد معك التوفر والموعد.</li>
+    </ol>
+  </section>
+</main>
+<div class="wrap"><section class="faq">
+  <h2>أسئلة شائعة</h2>
+  <details><summary>كم مدة الكراء؟</summary><p>مدة الكراء 3 أيام. راسلينا بتاريخ مناسبتك لنؤكد لك توفر الفستان.</p></details>
+<details><summary>هل يوجد عربون؟</summary><p>لا، لا يوجد عربون.</p></details>
+
+  <details><summary>هل يمكن تجربة الفستان قبل الطلب؟</summary><p>راسلينا على واتساب لنحدد معك موعداً مناسباً.</p></details>
+  <details><summary>هل تتوفر تعديلات على المقاس؟</summary><p>أخبرينا بمقاساتك عند الطلب ونوضح لك ما يمكن تعديله.</p></details>
+  <details><summary>كيف أتأكد من توفر الفستان في تاريخي؟</summary><p>أرسلي طلبك من الصفحة مع تاريخ المناسبة، ونرد عليك بالتأكيد على واتساب.</p></details>
+</section></div>
+
+<style>
+.visit{padding:36px 0 0;text-align:center}
+.visit h2{font-size:26px;margin-bottom:14px}
+.visit .box{border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px 16px}
+.visit p{margin:6px 0}
+.visit .muted{color:var(--muted)}
+.visit .btn{margin-top:14px}
+</style>
+<div class="wrap"><section class="visit">
+  <h2>زورينا في المحل</h2>
+  <div class="box">
+    <p><b>العنوان:</b> عداوة، بلدية الحامة، ولاية سطيف</p>
+    <p><b>ساعات العمل:</b> من 8:00 صباحاً إلى 5:00 مساءً</p>
+    <p class="muted">يومياً ما عدا الجمعة</p>
+    <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=%D8%B9%D8%AF%D8%A7%D9%88%D8%A9%20%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D9%85%D8%A9%20%D8%B3%D8%B7%D9%8A%D9%81" target="_blank" rel="noopener">افتحي الموقع في الخرائط</a>
+  </div>
+</section></div>
+<footer>
+
+  <div class="wrap">
+    <h2>تواصلي معنا</h2>
+    <div class="links">
+      <a class="btn btn-primary" id="footWa" href="#" target="_blank" rel="noopener">واتساب</a>
+      <a class="btn" id="footIg" href="#" target="_blank" rel="noopener">إنستغرام</a>
+    </div>
+    <p class="addr" id="addr" hidden></p>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <form id="orderForm" novalidate>
+    <h2 id="dlgTitle">طلب فستان</h2>
+    <p class="picked" id="picked"></p>
+
+    <label for="mode">نوع الطلب</label>
+    <select id="mode"></select>
+
+    <label for="name">الاسم</label>
+    <input id="name" name="name" autocomplete="name" required>
+
+    <label for="phone">رقم الهاتف</label>
+    <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0555 12 34 56" required>
+
+    <label for="city">الولاية أو المدينة</label>
+    <input id="city" name="city" autocomplete="address-level2" required>
+
+    <label for="date">تاريخ المناسبة</label>
+    <input id="date" name="date" type="date">
+
+    <label for="notes">ملاحظات (اختياري)</label>
+    <textarea id="notes" name="notes"></textarea>
+
+    <p class="err" id="err" role="alert"></p>
+    <div class="row">
+      <button type="submit" class="btn btn-primary">أرسلي الطلب عبر واتساب</button>
+      <button type="button" class="btn" id="closeBtn">إغلاق</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+/* ===== عدّلي هذا القسم فقط ===== */
+const SHOP = {
+  name: "Royaume de la Mariée",
+  whatsapp: "213655427454",          // الرقم بالصيغة الدولية بلا + ولا صفر البداية
+  instagram: "royaume_de_la_mariee_19",
+  address: ""                         // اكتبي عنوان المحل أو اتركيه فارغاً
+};
+
+/* لكل فستان: الاسم، سعر الكراء (rent)، سعر البيع (sale)، ومسار الصورة.
+   احذفي سطر rent أو sale إن لم يتوفر. الأسعار هنا أمثلة فقط. */
+const DRESSES = [
+  { name: "فستان الأميرة",  rent: 24000, sale: 120000, img: "images/688EB636-0089-41F1-989D-41C81DDE4E9B.jpeg" },
+  { name: "فستان الدانتيل", rent: 20000,                img: "images/C3B564FE-788E-4D66-909E-764C2622C72F.jpeg" },
+  { name: "فستان السهرة",   rent: 18000, sale: 90000,  img: "images/EA8CFD5F-044F-4B2F-ADE3-004C81C0165A.jpeg" },
+  { name: "فستان الحورية",               sale: 150000, img: "images/F116F474-A61C-440B-963D-CEC1D69E40A4.jpeg" },
+  { name: "فستان الستان",   تrent: 22000,                img: "images/dress5.jpg" },
+  { name: "فستان الملكة",   rent: 30000, sale: 180000, img: "images/dress6.jpg" }
+];
+/* ===== نهاية القسم القابل للتعديل ===== */
+
+const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " دج";
+
+const $ = id => document.getElementById(id);
+const grid = $("grid"), dlg = $("dlg"), form = $("orderForm"), err = $("err");
+const waBase = "https://wa.me/" + SHOP.whatsapp;
+let filter = "all", current = null;
+
+$("heroWa").href = waBase + "?text=" + encodeURIComponent("السلام عليكم، أريد الاستفسار عن الفساتين.");
+$("footWa").href = waBase;
+$("footIg").href = "https://instagram.com/" + SHOP.instagram;
+if (SHOP.address) { $("addr").textContent = SHOP.address; $("addr").hidden = false; }
+
+function render() {
+  grid.textContent = "";
+  const list = DRESSES.filter(d => filter === "all" || (filter === "rent" && d.rent) || (filter === "sale" && d.sale));
+  if (!list.length) {
+    const p = document.createElement("p");
+    p.className = "empty";
+    p.textContent = "لا توجد فساتين في هذا القسم حالياً.";
+    grid.appendChild(p);
+    return;
+  }
+  list.forEach(d => {
+    const card = document.createElement("article");
+    card.className = "card";
+
+    const arch = document.createElement("div");
+    arch.className = "arch";
+    const img = new Image();
+    img.alt = d.name; img.loading = "lazy"; img.src = d.img;
+    img.onerror = () => {
+      arch.textContent = "";
+      const ph = document.createElement("div");
+      ph.className = "ph"; ph.textContent = "الصورة قريباً";
+      arch.appendChild(ph);
+    };
+    arch.appendChild(img);
+
+    const h = document.createElement("h3");
+    h.textContent = d.name;
+
+    const prices = document.createElement("p");
+    prices.className = "prices";
+    const parts = [];
+    if (d.rent) parts.push("كراء: <b>" + fmt(d.rent) + "</b>");
+    if (d.sale) parts.push("شراء: <b>" + fmt(d.sale) + "</b>");
+    prices.innerHTML = parts.join("<br>");
+
+    const btn = document.createElement("button");
+    btn.className = "btn btn-primary"; btn.type = "button";
+    btn.textContent = "اطلبي هذا الفستان";
+    btn.addEventListener("click", () => openOrder(d));
+
+    card.append(arch, h, prices, btn);
+    grid.appendChild(card);
+  });
+}
+
+document.querySelectorAll(".chip").forEach(c => c.addEventListener("click", () => {
+  filter = c.dataset.f;
+  document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === c)));
+  render();
+}));
+
+function openOrder(d) {
+  current = d;
+  $("picked").textContent = "الفستان: " + d.name;
+  const mode = $("mode");
+  mode.textContent = "";
+  if (d.rent) mode.add(new Option("كراء (" + fmt(d.rent) + ")", "كراء"));
+  if (d.sale) mode.add(new Option("شراء (" + fmt(d.sale) + ")", "شراء"));
+  err.textContent = "";
+  if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+}
+
+function closeDlg() { if (dlg.close) dlg.close(); else dlg.removeAttribute("open"); }
+$("closeBtn").addEventListener("click", closeDlg);
+dlg.addEventListener("click", e => { if (e.target === dlg) closeDlg(); });
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const v = id => $(id).value.trim();
+  if (!v("name") || !v("city")) { err.textContent = "اكتبي اسمك والمدينة قبل الإرسال."; return; }
+  const phone = v("phone").replace(/[\s-]/g, "");
+  if (!/^0[567]\d{8}$/.test(phone)) {
+    err.textContent = "أدخلي رقماً صحيحاً من 10 أرقام يبدأ بـ 05 أو 06 أو 07.";
+    $("phone").focus();
+    return;
+  }
+  if (/X/.test(SHOP.whatsapp)) { err.textContent = "رقم واتساب المحل غير مضبوط بعد."; return; }
+  err.textContent = "";
+  const lines = [
+    "السلام عليكم، أريد طلب فستان من " + SHOP.name + ":",
+    "الفستان: " + current.name,
+    "نوع الطلب: " + $("mode").value,
+    "الاسم: " + v("name"),
+    "الهاتف: " + phone,
+    "المدينة: " + v("city"),
+    v("date") ? "تاريخ المناسبة: " + v("date") : "",
+    v("notes") ? "ملاحظات: " + v("notes") : ""
+  ].filter(Boolean);
+  window.open(waBase + "?text=" + encodeURIComponent(lines.join("\n")), "_blank");
+  closeDlg();
+  form.reset();
+});
+
+render();
+</script>
+</body>
+</html>
