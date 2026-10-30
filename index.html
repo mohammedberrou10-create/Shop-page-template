@@ -1,14 +1,22 @@
 <!DOCTYPE html>
+<!--
+  قالب صفحة محل فساتين أعراس (عربي RTL)
+  لكل عميل جديد عدّلي فقط:
+  1) قسم SHOP و DRESSES داخل السكربت (أسفل الملف)
+  2) ارفعي شعار العميل إلى images/logo.jpg وصور الفساتين إلى images/
+  3) سطر og:image في الأعلى بعد معرفة رابط النشر
+-->
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Royaume de la Mariée | فساتين الأعراس: كراء وبيع</title>
+<title>اسم المحل | فساتين الأعراس: كراء وبيع</title>
 <meta name="description" content="فساتين أعراس للكراء والبيع. اختاري فستانك واطلبيه مباشرة عبر واتساب.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Royaume de la Mariée | فساتين الأعراس: كراء وبيع">
+<meta property="og:title" content="اسم المحل | فساتين الأعراس: كراء وبيع">
 <meta property="og:description" content="اختاري فستانك واطلبيه مباشرة عبر واتساب.">
-<meta property="og:image" content="https://mohammedberrou10-create.github.io/littlelink_new/images/IMG_1274.jpeg">
+<!-- بدّلي الرابط التالي برابط شعار العميل بعد النشر: https://USERNAME.github.io/REPO/images/logo.jpg -->
+<meta property="og:image" content="https://USERNAME.github.io/REPO/images/logo.jpg">
 <meta property="og:locale" content="ar_DZ">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,20 +77,28 @@ h1,h2,h3{font-family:"Amiri","Times New Roman",serif;font-weight:700;line-height
 .steps ol{list-style:none;padding:0;display:grid;gap:10px;counter-reset:s}
 .steps li{counter-increment:s;display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
 .steps li::before{content:counter(s);flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-weight:700}
-.faq{padding:30px 0 0}
-.faq h2{font-size:26px;text-align:center;margin-bottom:14px}
-.faq details{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:0 14px;margin-bottom:10px}
-.faq summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:10px;min-height:44px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--gold);font-size:22px;line-height:1}
-.faq details[open] summary::after{content:"−"}
-.faq p{color:var(--muted);padding:0 0 14px}
 
 /* Footer */
 footer{margin-top:40px;padding:28px 0 36px;text-align:center;border-top:1px solid var(--line)}
 footer h2{font-size:22px}
 footer .links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
 footer .addr{color:var(--muted);margin-top:12px}
+
+/* Hidden fix + FAQ + Visit */
+[hidden]{display:none !important}
+.faq{padding:30px 0 0}
+.faq h2{font-size:26px;text-align:center;margin-bottom:14px}
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:0 14px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:10px;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{color:var(--muted);padding:0 0 14px}
+.visit{padding:36px 0 0;text-align:center}
+.visit h2{font-size:26px;margin-bottom:14px}
+.visit .box{border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px 16px}
+.visit p{margin:6px 0}
+.visit .btn{margin-top:14px}
 
 /* Order dialog */
 dialog{border:none;border-radius:22px 22px 0 0;padding:0;width:min(560px,100%);max-width:100%;max-height:92vh;margin:auto auto 0;background:var(--surface);color:var(--ink)}
@@ -102,8 +118,8 @@ textarea{min-height:76px;resize:vertical}
 
 <header class="hero">
   <div class="wrap">
-    <div class="arch"><img src="images/IMG_1274.jpeg" alt="شعار Royaume de la Mariée"></div>
-    <h1>Royaume de la Mariée</h1>
+    <div class="arch"><img src="images/logo.jpg" alt="شعار المحل" onerror="this.parentNode.hidden=true"></div>
+    <h1 id="shopName">اسم المحل</h1>
     <p>فساتين أعراس للكراء والبيع. اختاري فستانك واطلبيه من هاتفك.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#catalog">شاهدي الفساتين</a>
@@ -132,42 +148,31 @@ textarea{min-height:76px;resize:vertical}
     </ol>
   </section>
 </main>
+
 <div class="wrap"><section class="faq">
   <h2>أسئلة شائعة</h2>
-  <details><summary>كم مدة الكراء؟</summary><p>مدة الكراء 3 أيام. راسلينا بتاريخ مناسبتك لنؤكد لك توفر الفستان.</p></details>
-<details><summary>هل يوجد عربون؟</summary><p>لا، لا يوجد عربون.</p></details>
-
+  <details><summary>كم مدة الكراء؟</summary><p>تختلف المدة حسب الفستان وموعد مناسبتك. راسلينا بتاريخ العرس ونؤكد لك التفاصيل.</p></details>
   <details><summary>هل يمكن تجربة الفستان قبل الطلب؟</summary><p>راسلينا على واتساب لنحدد معك موعداً مناسباً.</p></details>
   <details><summary>هل تتوفر تعديلات على المقاس؟</summary><p>أخبرينا بمقاساتك عند الطلب ونوضح لك ما يمكن تعديله.</p></details>
   <details><summary>كيف أتأكد من توفر الفستان في تاريخي؟</summary><p>أرسلي طلبك من الصفحة مع تاريخ المناسبة، ونرد عليك بالتأكيد على واتساب.</p></details>
 </section></div>
 
-<style>
-.visit{padding:36px 0 0;text-align:center}
-.visit h2{font-size:26px;margin-bottom:14px}
-.visit .box{border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px 16px}
-.visit p{margin:6px 0}
-.visit .muted{color:var(--muted)}
-.visit .btn{margin-top:14px}
-</style>
-<div class="wrap"><section class="visit">
+<div class="wrap"><section class="visit" id="visit" hidden>
   <h2>زورينا في المحل</h2>
   <div class="box">
-    <p><b>العنوان:</b> عداوة، بلدية الحامة، ولاية سطيف</p>
-    <p><b>ساعات العمل:</b> من 8:00 صباحاً إلى 5:00 مساءً</p>
-    <p class="muted">يومياً ما عدا الجمعة</p>
-    <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=%D8%B9%D8%AF%D8%A7%D9%88%D8%A9%20%D8%A8%D9%84%D8%AF%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D9%85%D8%A9%20%D8%B3%D8%B7%D9%8A%D9%81" target="_blank" rel="noopener">افتحي الموقع في الخرائط</a>
+    <p id="vAddr"><b>العنوان:</b> <span></span></p>
+    <p id="vHours"><b>ساعات العمل:</b> <span></span></p>
+    <a class="btn btn-primary" id="vMap" href="#" target="_blank" rel="noopener" hidden>افتحي الموقع في الخرائط</a>
   </div>
 </section></div>
-<footer>
 
+<footer>
   <div class="wrap">
     <h2>تواصلي معنا</h2>
     <div class="links">
       <a class="btn btn-primary" id="footWa" href="#" target="_blank" rel="noopener">واتساب</a>
       <a class="btn" id="footIg" href="#" target="_blank" rel="noopener">إنستغرام</a>
     </div>
-    <p class="addr" id="addr" hidden></p>
   </div>
 </footer>
 
@@ -205,26 +210,27 @@ textarea{min-height:76px;resize:vertical}
 <script>
 /* ===== عدّلي هذا القسم فقط ===== */
 const SHOP = {
-  name: "Royaume de la Mariée",
-  whatsapp: "213655427454",          // الرقم بالصيغة الدولية بلا + ولا صفر البداية
-  instagram: "royaume_de_la_mariee_19",
-  address: ""                         // اكتبي عنوان المحل أو اتركيه فارغاً
+  name: "اسم المحل",
+  whatsapp: "213XXXXXXXXX",          // الرقم بالصيغة الدولية بلا + ولا صفر البداية ولا مسافات
+  instagram: "your_instagram",
+  address: "",                        // مثال: الحي، البلدية، الولاية (اتركيه فارغاً لإخفاء القسم)
+  hours: "",                          // مثال: من 8:00 صباحاً إلى 5:00 مساءً، يومياً ما عدا الجمعة
+  mapUrl: ""                          // رابط الموقع من خرائط جوجل (اختياري)
 };
 
 /* لكل فستان: الاسم، سعر الكراء (rent)، سعر البيع (sale)، ومسار الصورة.
    احذفي سطر rent أو sale إن لم يتوفر. الأسعار هنا أمثلة فقط. */
 const DRESSES = [
-  { name: "فستان الأميرة",  rent: 24000, sale: 120000, img: "images/688EB636-0089-41F1-989D-41C81DDE4E9B.jpeg" },
-  { name: "فستان الدانتيل", rent: 20000,                img: "images/C3B564FE-788E-4D66-909E-764C2622C72F.jpeg" },
-  { name: "فستان السهرة",   rent: 18000, sale: 90000,  img: "images/EA8CFD5F-044F-4B2F-ADE3-004C81C0165A.jpeg" },
-  { name: "فستان الحورية",               sale: 150000, img: "images/F116F474-A61C-440B-963D-CEC1D69E40A4.jpeg" },
-  { name: "فستان الستان",   تrent: 22000,                img: "images/dress5.jpg" },
+  { name: "فستان الأميرة",  rent: 25000, sale: 120000, img: "images/dress1.jpg" },
+  { name: "فستان الدانتيل", rent: 20000,                img: "images/dress2.jpg" },
+  { name: "فستان السهرة",   rent: 18000, sale: 90000,  img: "images/dress3.jpg" },
+  { name: "فستان الحورية",               sale: 150000, img: "images/dress4.jpg" },
+  { name: "فستان الستان",   rent: 22000,                img: "images/dress5.jpg" },
   { name: "فستان الملكة",   rent: 30000, sale: 180000, img: "images/dress6.jpg" }
 ];
 /* ===== نهاية القسم القابل للتعديل ===== */
 
 const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " دج";
-
 const $ = id => document.getElementById(id);
 const grid = $("grid"), dlg = $("dlg"), form = $("orderForm"), err = $("err");
 const waBase = "https://wa.me/" + SHOP.whatsapp;
@@ -233,7 +239,16 @@ let filter = "all", current = null;
 $("heroWa").href = waBase + "?text=" + encodeURIComponent("السلام عليكم، أريد الاستفسار عن الفساتين.");
 $("footWa").href = waBase;
 $("footIg").href = "https://instagram.com/" + SHOP.instagram;
-if (SHOP.address) { $("addr").textContent = SHOP.address; $("addr").hidden = false; }
+$("shopName").textContent = SHOP.name;
+document.title = SHOP.name + " | فساتين الأعراس: كراء وبيع";
+if (SHOP.address || SHOP.hours) {
+  $("visit").hidden = false;
+  [["vAddr", SHOP.address], ["vHours", SHOP.hours]].forEach(([id, v]) => {
+    if (v) $(id).querySelector("span").textContent = v; else $(id).hidden = true;
+  });
+  const map = SHOP.mapUrl || (SHOP.address ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(SHOP.address) : "");
+  if (map) { $("vMap").href = map; $("vMap").hidden = false; }
+}
 
 function render() {
   grid.textContent = "";
